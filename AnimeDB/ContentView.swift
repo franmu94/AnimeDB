@@ -8,17 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var vm = AnimeListViewModel()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        NavigationStack{
+            List {
+                ForEach(vm.filteredAnimes, id: \.self){ anime in
+                    NavigationLink(value: anime){
+                        CellView(anime: anime)
+                    }
+                }
+            }
+            .listStyle(.grouped)
+            .navigationDestination(for: Anime.self) { anime in
+                Text(anime.title)
+            }
+            .navigationTitle("Animes")
         }
-        .padding()
+        .searchable(text: $vm.searchText, prompt: "Search Anime")
+        .animation(.smooth, value: vm.searchText)
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView.preview
 }

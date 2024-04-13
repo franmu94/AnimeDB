@@ -14,6 +14,17 @@
 		D369EDF62BC6E50700B64F1F /* AnimeDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369EDF52BC6E50700B64F1F /* AnimeDBTests.swift */; };
 		D369EE002BC6E50700B64F1F /* AnimeDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369EDFF2BC6E50700B64F1F /* AnimeDBUITests.swift */; };
 		D369EE022BC6E50700B64F1F /* AnimeDBUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369EE012BC6E50700B64F1F /* AnimeDBUITestsLaunchTests.swift */; };
+		D369EE152BC6E5CC00B64F1F /* AnimesAC2024.json in Resources */ = {isa = PBXBuildFile; fileRef = D369EE132BC6E5CC00B64F1F /* AnimesAC2024.json */; };
+		D369EE162BC6E5CC00B64F1F /* AnimesTestAC2024.json in Resources */ = {isa = PBXBuildFile; fileRef = D369EE142BC6E5CC00B64F1F /* AnimesTestAC2024.json */; };
+		D369EE192BC6E72A00B64F1F /* AnimeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369EE182BC6E72A00B64F1F /* AnimeDTO.swift */; };
+		D369EE1D2BC6F2EF00B64F1F /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369EE1C2BC6F2EF00B64F1F /* Anime.swift */; };
+		D369EE1F2BC6F36400B64F1F /* JSONInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369EE1E2BC6F36400B64F1F /* JSONInteractor.swift */; };
+		D369EE252BC83DF400B64F1F /* URLInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369EE242BC83DF400B64F1F /* URLInteractor.swift */; };
+		D369EE272BC83E1800B64F1F /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369EE262BC83E1800B64F1F /* TestData.swift */; };
+		D369EE292BC83E4700B64F1F /* AnimeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369EE282BC83E4700B64F1F /* AnimeInteractor.swift */; };
+		D369EE2B2BC8419D00B64F1F /* AnimeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369EE2A2BC8419D00B64F1F /* AnimeListViewModel.swift */; };
+		D3A706E92BC988B700911534 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A706E82BC988B700911534 /* CellView.swift */; };
+		D3A706EC2BCA98FB00911534 /* StarsViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A706EB2BCA98FB00911534 /* StarsViewComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +55,17 @@
 		D369EDFB2BC6E50700B64F1F /* AnimeDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimeDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D369EDFF2BC6E50700B64F1F /* AnimeDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDBUITests.swift; sourceTree = "<group>"; };
 		D369EE012BC6E50700B64F1F /* AnimeDBUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDBUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D369EE132BC6E5CC00B64F1F /* AnimesAC2024.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AnimesAC2024.json; sourceTree = "<group>"; };
+		D369EE142BC6E5CC00B64F1F /* AnimesTestAC2024.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AnimesTestAC2024.json; sourceTree = "<group>"; };
+		D369EE182BC6E72A00B64F1F /* AnimeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDTO.swift; sourceTree = "<group>"; };
+		D369EE1C2BC6F2EF00B64F1F /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
+		D369EE1E2BC6F36400B64F1F /* JSONInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONInteractor.swift; sourceTree = "<group>"; };
+		D369EE242BC83DF400B64F1F /* URLInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLInteractor.swift; sourceTree = "<group>"; };
+		D369EE262BC83E1800B64F1F /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		D369EE282BC83E4700B64F1F /* AnimeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeInteractor.swift; sourceTree = "<group>"; };
+		D369EE2A2BC8419D00B64F1F /* AnimeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListViewModel.swift; sourceTree = "<group>"; };
+		D3A706E82BC988B700911534 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		D3A706EB2BCA98FB00911534 /* StarsViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsViewComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +116,13 @@
 		D369EDE32BC6E50500B64F1F /* AnimeDB */ = {
 			isa = PBXGroup;
 			children = (
-				D369EDE42BC6E50500B64F1F /* AnimeDBApp.swift */,
-				D369EDE62BC6E50500B64F1F /* ContentView.swift */,
-				D369EDE82BC6E50700B64F1F /* Assets.xcassets */,
+				D369EE172BC6E5FE00B64F1F /* Views */,
+				D3A706EA2BCA93B400911534 /* Components */,
+				D369EE122BC6E55A00B64F1F /* ViewModel */,
+				D369EE112BC6E54D00B64F1F /* Interactor */,
+				D369EE0F2BC6E52200B64F1F /* Model */,
+				D369EE102BC6E53400B64F1F /* Resources */,
+				D369EE0E2BC6E51800B64F1F /* System */,
 				D369EDEA2BC6E50700B64F1F /* Preview Content */,
 			);
 			path = AnimeDB;
@@ -105,7 +131,9 @@
 		D369EDEA2BC6E50700B64F1F /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				D369EE142BC6E5CC00B64F1F /* AnimesTestAC2024.json */,
 				D369EDEB2BC6E50700B64F1F /* Preview Assets.xcassets */,
+				D369EE262BC83E1800B64F1F /* TestData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -125,6 +153,67 @@
 				D369EE012BC6E50700B64F1F /* AnimeDBUITestsLaunchTests.swift */,
 			);
 			path = AnimeDBUITests;
+			sourceTree = "<group>";
+		};
+		D369EE0E2BC6E51800B64F1F /* System */ = {
+			isa = PBXGroup;
+			children = (
+				D369EDE42BC6E50500B64F1F /* AnimeDBApp.swift */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		D369EE0F2BC6E52200B64F1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D369EE182BC6E72A00B64F1F /* AnimeDTO.swift */,
+				D369EE1C2BC6F2EF00B64F1F /* Anime.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D369EE102BC6E53400B64F1F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D369EE132BC6E5CC00B64F1F /* AnimesAC2024.json */,
+				D369EDE82BC6E50700B64F1F /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D369EE112BC6E54D00B64F1F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D369EE282BC83E4700B64F1F /* AnimeInteractor.swift */,
+				D369EE1E2BC6F36400B64F1F /* JSONInteractor.swift */,
+				D369EE242BC83DF400B64F1F /* URLInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		D369EE122BC6E55A00B64F1F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D369EE2A2BC8419D00B64F1F /* AnimeListViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		D369EE172BC6E5FE00B64F1F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D369EDE62BC6E50500B64F1F /* ContentView.swift */,
+				D3A706E82BC988B700911534 /* CellView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D3A706EA2BCA93B400911534 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D3A706EB2BCA98FB00911534 /* StarsViewComponent.swift */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +322,8 @@
 			files = (
 				D369EDEC2BC6E50700B64F1F /* Preview Assets.xcassets in Resources */,
 				D369EDE92BC6E50700B64F1F /* Assets.xcassets in Resources */,
+				D369EE162BC6E5CC00B64F1F /* AnimesTestAC2024.json in Resources */,
+				D369EE152BC6E5CC00B64F1F /* AnimesAC2024.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +348,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D369EE252BC83DF400B64F1F /* URLInteractor.swift in Sources */,
+				D369EE1D2BC6F2EF00B64F1F /* Anime.swift in Sources */,
+				D369EE1F2BC6F36400B64F1F /* JSONInteractor.swift in Sources */,
+				D369EE192BC6E72A00B64F1F /* AnimeDTO.swift in Sources */,
 				D369EDE72BC6E50500B64F1F /* ContentView.swift in Sources */,
+				D369EE292BC83E4700B64F1F /* AnimeInteractor.swift in Sources */,
+				D3A706E92BC988B700911534 /* CellView.swift in Sources */,
+				D369EE272BC83E1800B64F1F /* TestData.swift in Sources */,
+				D369EE2B2BC8419D00B64F1F /* AnimeListViewModel.swift in Sources */,
+				D3A706EC2BCA98FB00911534 /* StarsViewComponent.swift in Sources */,
 				D369EDE52BC6E50500B64F1F /* AnimeDBApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
