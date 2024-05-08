@@ -17,13 +17,20 @@ struct AnimeListView: View {
                     NavigationLink(value: anime){
                         CellView(anime: anime)
                     }
-                    .swipeActions {
+                    .swipeActions (edge: .leading){
                         Button {
                             vm.favoriteToggle(anime: anime)
                         } label: {
                             Image(systemName: "star.fill")
                                 .tint(anime.isFavorites ? .yellow : .gray)
                         }
+                    }
+                    .swipeActions(edge: .trailing) {
+                        Button(role:.destructive, action: {
+                            vm.removeAnime(anime: anime)
+                        }, label: {
+                            Image(systemName: "trash")
+                        })
                     }
                 }
                 
@@ -39,8 +46,19 @@ struct AnimeListView: View {
                 }
             }
         }
+        .refreshable {
+            vm.getAnimes()
+        }
+        .alert(vm.errorMesage, isPresented: $vm.showAlert, actions: {
+            Button {
+                vm.getAnimes()
+            } label: {
+                Text("Try again")
+            }
+        })
         .searchable(text: $vm.searchText, prompt: "Search Anime")
         .animation(.smooth, value: vm.searchText)
+        
     }
 }
 

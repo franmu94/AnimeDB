@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CellView: View {
-    let anime: Anime
+    var anime: Anime
     var body: some View {
         HStack(spacing: 8){
             AsyncImage(url: anime.image) { image in
@@ -17,6 +17,12 @@ struct CellView: View {
                     .scaledToFit()
                     .frame(width: 105)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .overlay(alignment: .topLeading) {
+                        Image(systemName: "heart.fill")
+                            .foregroundStyle(.red)
+                            .padding(3)
+                            .opacity(anime.isFavorites ? 1 : 0)
+                    }
             } placeholder: {
                 ProgressView()
                     .controlSize(.extraLarge)
@@ -31,7 +37,7 @@ struct CellView: View {
                 Text("Episodes: \(anime.episodes)")
                 HStack {
                     Text("\(anime.rateStart)")
-                    StarsViewComponent(anime: anime )
+                    StarsComponent(anime: anime)
                 }
             }
         }

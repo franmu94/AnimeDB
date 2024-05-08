@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct MainTabView: View {
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            AnimeListView()
+                .tabItem {
+                    Label("Anime List", systemImage:  "list.dash")
+                }
+            FavoritesView()
+                .tabItem {
+                    Label("Favorites", systemImage:  "heart")
+                }
+        }
     }
 }
 
 #Preview {
     MainTabView()
+        .environmentObject(AnimeListViewModel.preview)
 }

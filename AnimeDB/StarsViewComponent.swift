@@ -30,7 +30,7 @@ struct StarsViewComponent: View {
     }
     
     let gradient = LinearGradient(
-        gradient: Gradient(colors: [.red, .blue]), // Cambia los colores según tu preferencia
+        gradient: Gradient(colors: [.red, .blue]), 
         startPoint: .topLeading,
         endPoint: .bottomTrailing
     )
@@ -93,17 +93,15 @@ struct StarsViewComponent: View {
                     
                     Image(systemName: "star.fill")
                         .foregroundColor(.clear)
-                        .overlay {
+                        .background() {
                             Rectangle()
                                 .foregroundColor(.yellow)
                                 .offset(x: -22 * dCorregido)
                                 .mask(Image(systemName: "star.fill"))
-                            
-                            
+                        }
+                        .overlay {
                             Image(systemName: "star")
                                 .foregroundColor(.secondary.opacity(0.4))
-                            
-                            
                         }
                 }
                 

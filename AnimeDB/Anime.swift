@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Anime: Codable, Hashable {
-    
+struct Anime: Hashable, Identifiable, Codable{
+    let id :  UUID
     let title: String
     let description: String?
     let year: Int
@@ -21,24 +21,26 @@ struct Anime: Codable, Hashable {
     let genres: [AnimeGenre]?
     let urlAnime: URL
     let image: URL
-    let isFavorites: Bool
-    
-    
-    
-    
+    var isFavorites: Bool
 }
 
 
 enum AnimeType: String, CaseIterable, Identifiable, Codable {
     var id: Self { self }
+    
+    case all = "All"
+    
     case anime = "Anime"
     case special = "Especial"
     case ova = "OVA"
     case pelicula = "Película"
-    case unknown = "All"
+    
 }
 enum AnimeGenre: String, CaseIterable, Identifiable, Codable{
     var id: Self { self }
+    
+    case all = "All"
+
     case adventures = "Aventuras"
     case scifi = "Ciencia Ficción"
     case comedy = "Comedy"
@@ -60,12 +62,31 @@ enum AnimeGenre: String, CaseIterable, Identifiable, Codable{
     case police = "Policía"
     case school = "Escolares"
     case martialArts = "Artes Marciales"
-    case others = "Otros"
 }
 
-enum AnimeStatus:String, Codable {
+enum AnimeStatus:String, Codable, CaseIterable, Identifiable {
+    var id: AnimeStatus { self }
+
     case finalizado = "Finalizado"
     case enEmision = "En emision"
     case proximamente = "Proximamente"
-    case unknown
+    case all = "All"
+}
+
+
+enum OrderBy: String, CaseIterable, Identifiable {
+    var id: OrderBy { self }
+    
+    case title = "Title"
+    case titleDescendent = "Title descendent"
+    case rating = "Rating"
+    case year = "All"
+    case yearDescent = "Year descendent"
+}
+
+enum FilterOptions: String, CaseIterable, Identifiable {
+    var id: FilterOptions { self }
+    case animeStatus = "Anime Status"
+    case animeGenre = "Anime Genre"
+    case animeType = "Anime Type"
 }

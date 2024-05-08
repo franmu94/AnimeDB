@@ -38,6 +38,7 @@ struct AnimeDTO: Codable {
     
     var toAnime: Anime{
         Anime(
+            id: UUID(),
             title: title,
             description: description,
             year: year,
